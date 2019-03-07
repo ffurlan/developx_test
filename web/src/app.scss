@@ -92,10 +92,16 @@ button {
     }
   }
   &__label {
+    display: flex;
+    align-items: center;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     cursor: pointer;
     @include fontSize(22px);
+    span {
+      margin-left: 3px;
+      @include fontSize(18px);
+    }
   }
 }
 

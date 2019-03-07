@@ -72,7 +72,7 @@ class App extends Component {
           }, 200)
         })
         .catch(() => {
-          this.setState({ isLoading: false, hasError: true, hasReturn: true })
+          this.setState({ isLoading: false, hasError: true, hasReturn: false })
         })
     })
   }
@@ -120,7 +120,7 @@ class App extends Component {
                     bills.map(bill => {
                       return (
                         <div className='bill__column' key={bill.label}>
-                          <h2 className='bill__label'>{bill.label} <span>- {bill.amount} nota</span></h2>
+                          <h2 className='bill__label'>{bill.label} <span> - {bill.amount} nota{bill.amount > 1 ? 's' : ''}</span></h2>
                           <div className='bill__container'>
                             {
                               Array.from(Array(bill.amount), (e, i) => {
