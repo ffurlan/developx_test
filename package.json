@@ -1,0 +1,42 @@
+{
+  "name": "DEVELOPX-TEST",
+  "version": "1.0.0",
+  "description": "Developx Test Project",
+  "license": "ISC",
+  "main": "./bin/www",
+  "scripts": {
+    "start": "cross-env NODE_ENV=local LOG_LEVEL=debug ENVIRONMENT_ID=local nodemon ./bin/www.js",
+    "dev": "cross-env NODE_ENV=dev LOG_LEVEL=debug nodemon ./bin/www.js",
+    "stg": "cross-env NODE_ENV=staging LOG_LEVEL=debug nodemon ./bin/www.js",
+    "prd": "cross-env NODE_ENV=prod LOG_LEVEL=info nodemon ./bin/www.js",
+    "test": "cross-env NODE_ENV=local LOG_LEVEL=debug  node node_modules/mocha/bin/mocha"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "clarify": "^2.1.0",
+    "cli-table": "^0.3.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "mustache": "^2.3.0",
+    "natives": "^1.1.6",
+    "node-yaml-config": "0.0.4",
+    "nodemon": "^1.17.5",
+    "should": "^13.1.3",
+    "uid2": "0.0.3",
+    "useragent": "^2.2.1",
+    "uuid": "^3.1.0",
+    "validator": "^9.4.1",
+    "supertest": "^3.1.0"
+  },
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "mocha": "^5.2.0",
+    "mocha-clean": "^1.0.0",
+    "prettyjson": "^1.2.1",
+    "request-cli": "^1.0.0"
+  }
+}

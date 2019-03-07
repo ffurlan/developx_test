@@ -1,0 +1,5 @@
+/// Project Constants
+module.exports.CONSTANTS = {
+  ERROR_400_INVALID_FIELD: 'INVALID_FIELD',
+  ERROR_401_ACCESS_DENIED: 'ACCESS_DENIED',
+};
